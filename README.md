@@ -7,6 +7,8 @@ A simple node lib to generate deterministic Mongo ObjectIds - useful to write mo
 
 ## Usage
 
+```
+
   var ID = require('mongo-testid');
   
   var id = ID('Peter.Lustig') // will generate '373436383838636132616661'
@@ -20,3 +22,4 @@ A simple node lib to generate deterministic Mongo ObjectIds - useful to write mo
   var id4 = ID() // will generate '393362383835616466653064' again (see id2)
   
   
+```

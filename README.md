@@ -23,3 +23,12 @@ A simple node lib to generate deterministic Mongo ObjectIds - useful to write mo
   
   
 ```
+
+To print a table of key/objectid use ``ID.table()`` :
+
+```
+┌──────────────┬──────────────────────────────┐
+│ Fritz.Fuchs  │ 323665626335366661633863     │
+│ Peter.Lustig │ 373436383838636132616661     │
+└──────────────┴──────────────────────────────┘
+```

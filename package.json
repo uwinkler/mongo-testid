@@ -1,0 +1,32 @@
+{
+  "name": "testid",
+  "version": "1.0.0",
+  "description": "A simple lib to generate beautiful Mongo ObjectIds - useful to write mockup data — Edit",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uwinkler/testid.git"
+  },
+  "keywords": [
+    "mongodb",
+    "objecid",
+    "test"
+  ],
+  "author": "Ulrich Winkler <uwinkler@kodira.de>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uwinkler/testid/issues"
+  },
+  "homepage": "https://github.com/uwinkler/testid#readme",
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "md5": "^2.0.0",
+    "mongodb": "^2.1.4"
+  }
+}

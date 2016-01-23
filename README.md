@@ -1,2 +1,2 @@
 # testid
-A simple lib to generate beautiful Mongo ObjectIds - useful to write mockup data
+A simple lib to generate deterministic Mongo ObjectIds - useful to write mockup data

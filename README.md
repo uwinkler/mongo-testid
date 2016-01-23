@@ -11,8 +11,8 @@ A simple node lib to generate deterministic Mongo ObjectIds - useful to write mo
 
   var ID = require('mongo-testid');
   
-  var id = ID('Peter.Lustig') // will generate '373436383838636132616661'
-  var id = ID('Fritz.Fuchs') // gives you '323665626335366661633863'
+  var id0 = ID('Peter.Lustig') // will generate '373436383838636132616661'
+  var id1 = ID('Fritz.Fuchs') // gives you '323665626335366661633863'
   
   var id2 = ID() // will generate '393362383835616466653064'
   var id3 = ID() // will generate '353561353430303861643162'

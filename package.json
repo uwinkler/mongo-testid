@@ -1,7 +1,7 @@
 {
-  "name": "testid",
-  "version": "1.0.0",
-  "description": "A simple lib to generate beautiful Mongo ObjectIds - useful to write mockup data — Edit",
+  "name": "mongo-testid",
+  "version": "1.0.2",
+  "description": "A simple lib to generate deterministic Mongo ObjectIds - useful to write mockup data.",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha tests/test.js"

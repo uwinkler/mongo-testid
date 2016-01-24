@@ -46,10 +46,9 @@ describe('TestID', function () {
 
         it('should be able to print keys/objectids', function () {
             ID('Peter.Lustig');
+			ID('Fritz.Fuchs');
             assert(ID.table());
             console.log(ID.table());
         });
-
-
     });
 });

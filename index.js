@@ -52,6 +52,14 @@ module.exports.table = function () {
         colWidths: [maxLen + 2, 30]
     });
 
+    values.sort(function (l,r) {
+        var keyLeft = l[0];
+        var keyRigth = r[0];
+        if ( keyLeft < keyRigth) return -1;
+        if ( keyLeft === keyRigth) return 0;
+        return 1;
+    });
+
     values.forEach(function (value) {
         table.push(value)
     });

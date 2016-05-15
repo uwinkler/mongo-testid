@@ -53,7 +53,7 @@ Lets say your REST API ```localhost/stories/:id`` will return you a story by a g
 
  it('Should respond with an stroy', function (done) {
         request(APP)
-            .get('http://localhost/stories' + ID('The Prince and the Paupe'))
+            .get('http://localhost/stories/' + ID('The Prince and the Paupe'))
             .expect(200)
             .end(function (err, res) {
                 done(err);

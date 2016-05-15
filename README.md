@@ -11,7 +11,6 @@ var mongoose = require('mongoose')
   , Schema = mongoose.Schema
   
 var AuthorSchema = Schema({
-  _id     : { Schema.ObjectId, required: true, ref: 'User',
   name    : String,
   stories : [{ type: Schema.Types.ObjectId, ref: 'Story' }]
 });

@@ -26,7 +26,7 @@ var Story  = mongoose.model('Story', storySchema);
 var Author = mongoose.model('Author', personSchema);
 ```
 
-If Mongo-TestID enables you to write your seed data ans unit tests like this:
+ Mongo-TestID enables you to write your seed data ans unit tests like this:
 
 ```javascript
 

@@ -1,9 +1,74 @@
 # mongo-testid
 A simple node lib to generate deterministic Mongo ObjectIds - useful to write mockup data
 
+
+## Why?
+
+Let's assume you have follwoing Mongoose Schema:
+
+```javascript
+var mongoose = require('mongoose')
+  , Schema = mongoose.Schema
+  
+var AuthorSchema = Schema({
+  _id     : { Schema.ObjectId, required: true, ref: 'User',
+  name    : String,
+  stories : [{ type: Schema.Types.ObjectId, ref: 'Story' }]
+});
+
+var StorySchema = Schema({
+  title    : String,
+  author : [{ type: Schema.Types.ObjectId, ref: 'Author' }]
+
+});
+
+var Story  = mongoose.model('Story', storySchema);
+var Author = mongoose.model('Author', personSchema);
+```
+
+If Mongo-TestID enables you to write your seed data ans unit tests like this:
+
+```javascript
+
+var ID = require('mongo-testid');
+
+
+Strory.create(
+  {
+    _id: ID('The Prince and the Pauper')
+    name:'The Prince and the Pauper'
+    author:ID('Mark Twain')
+  });
+  
+  Author.create( 
+   {
+    _id:ID('Mark Twain'),
+    stories[ ID('The Prince and the Pauper' ]
+   });
+ 
+```
+
+Lets say your REST API ```localhost/stories/:id`` will return you a story by a given id, you may write your tests like this:
+
+```javascript
+
+ it('Should respond with an stroy', function (done) {
+        request(APP)
+            .get('http://localhost/stories' + ID('The Prince and the Paupe'))
+            .expect(200)
+            .end(function (err, res) {
+                done(err);
+            });
+    });
+```
+
+Easy, right?
+
 ## Installation
 
    npm install mongo-testid --save-dev
+   
+
 
 ## Usage
 

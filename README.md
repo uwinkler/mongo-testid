@@ -42,7 +42,7 @@ Strory.create(
   Author.create( 
    {
     _id:ID('Mark Twain'),
-    stories[ ID('The Prince and the Pauper' ]
+    stories[ ID('The Prince and the Pauper') ]
    });
  
 ```

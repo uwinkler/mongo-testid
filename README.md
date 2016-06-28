@@ -100,6 +100,6 @@ To print a table of key/objectid use ``ID.table()`` :
 ```
 
 
-## Projects using mongo-test-id
+## Projects using mongo-testid
 
 * http://www.skolar.de 

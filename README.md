@@ -98,3 +98,8 @@ To print a table of key/objectid use ``ID.table()`` :
 │ Peter.Lustig │ 373436383838636132616661     │
 └──────────────┴──────────────────────────────┘
 ```
+
+
+## Projects using mongo-test-id
+
+* http://www.skolar.de 

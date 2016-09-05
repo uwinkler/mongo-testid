@@ -4,7 +4,7 @@ A simple node lib to generate deterministic Mongo ObjectIds - useful to write mo
 
 ## Why?
 
-Let's assume you have follwoing Mongoose Schema:
+Let's assume you have following Mongoose Schema:
 
 ```javascript
 var mongoose = require('mongoose')
@@ -25,7 +25,7 @@ var Story  = mongoose.model('Story', storySchema);
 var Author = mongoose.model('Author', personSchema);
 ```
 
- Mongo-TestID enables you to write your seed data ans unit tests like this:
+ Mongo-TestID enables you to write your seed data and unit tests like this:
 
 ```javascript
 
@@ -51,9 +51,9 @@ Lets say your REST API ```localhost/stories/:id`` will return you a story by a g
 
 ```javascript
 
- it('Should respond with an stroy', function (done) {
+ it('Should respond with an story', function (done) {
         request(APP)
-            .get('http://localhost/stories/' + ID('The Prince and the Paupe'))
+            .get('http://localhost/stories/' + ID('The Prince and the Pauper'))
             .expect(200)
             .end(function (err, res) {
                 done(err);

@@ -1,4 +1,7 @@
 # mongo-testid
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/uwinkler/mongo-testid.svg)](https://greenkeeper.io/)
+
 A simple node lib to generate deterministic Mongo ObjectIds - useful to write mockup data
 
 
